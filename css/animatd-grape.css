@@ -30,8 +30,18 @@ body {
   border-right: 8px solid #550059;
 }
 
+/* .shadow-top {
+  position: absolute;
+  width: 21px;
+  height: 30px;
+  border-right: 5px solid white;
+  border-radius: 100%;
+  transform: rotate(-45deg);
+} */
+
 .eyes {
   position: absolute;
+  clip-path: circle(50%);
   background: white;
   border-radius: 50%;
   width: 90px;
@@ -46,6 +56,43 @@ body {
 .eyes-right {
   right: 190px;
   top: 90px;
+}
+
+.eyes-medium {
+  position: absolute;
+  background: #3d2314;
+  border-radius: 50%;
+  border: 1px solid #3d2314;
+  width: 80px;
+  height: 80px;
+}
+
+.eyes-medium-left {
+  left: 25px;
+  top: 15px;
+}
+
+.eyes-medium-right {
+  right: 25px;
+  top: 15px;
+}
+
+.iris {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.iris-botton-left {
+  left: 32px;
+  top: 30px;
+}
+
+.iris-botton-right {
+  right: 32px;
+  top: 30px;
 }
 
 .container-grape-1 {
