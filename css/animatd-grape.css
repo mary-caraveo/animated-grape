@@ -23,6 +23,7 @@ body {
   background: #299100;
   border-left: 12px solid #06631a;
   border-radius: 300px 3000px 300px 3000px;
+  box-shadow: 0 19px 38px rgb(0, 0, 0, 0.3), 0 15px 10px rgb(0, 0, 0, 0.22);
   width: 200px;
   height: 150px;
   animation: sheets 6s alternate infinite;
@@ -66,6 +67,7 @@ body {
   width: 110px;
   height: 130px;
   animation: move 5s alternate infinite;
+  box-shadow: 5px 16px 10px rgb(0, 0, 0, 0.3);
   /* border: 1px solid #550059; */
 }
 
@@ -296,10 +298,12 @@ body {
 }
 
 .grape-5 {
+  box-shadow: none;
   left: 180px;
 }
 
 .grape-6 {
+  box-shadow: none;
   right: 210px;
 }
 
@@ -321,6 +325,7 @@ body {
 }
 
 .grape-9 {
+  box-shadow: none;
   left: 225px;
 }
 
@@ -338,10 +343,12 @@ body {
 
 .grape-11 {
   border-left: 12px solid #550059;
+  border-right: 12px solid #550059;
   left: 170px;
 }
 
 .grape-12 {
+  border-left: 12px solid #550059;
   border-right: 12px solid #550059;
   right: 220px;
 }
@@ -351,4 +358,14 @@ body {
   border-right: 12px solid #550059;
   top: 360px;
   left: 220px;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 20vh;
+  }
+
+  .container {
+    margin: 25px;
+  }
 }
