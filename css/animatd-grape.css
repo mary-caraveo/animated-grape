@@ -124,15 +124,6 @@ body {
   top: -25px;
 }
 
-/* .shadow-top {
-  position: absolute;
-  width: 21px;
-  height: 30px;
-  border-right: 5px solid white;
-  border-radius: 100%;
-  transform: rotate(-45deg);
-} */
-
 .eyes {
   position: absolute;
   clip-path: circle(50%);
@@ -160,6 +151,7 @@ body {
   border: 2px solid #3d2314;
   width: 80px;
   height: 80px;
+  border-top: 10px solid #5a3131;
   animation: move 5s alternate infinite;
 }
 
@@ -221,6 +213,23 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+.circle-shadow {
+  position: absolute;
+  background: #6b0374;
+  border-radius: 50%;
+  width: 60px;
+  height: 40px;
+}
+
+.circle-shadow-left {
+  top: 55px;
+}
+
+.circle-shadow-right {
+  top: 55px;
+  right: -5px;
 }
 
 .mount {
@@ -362,10 +371,6 @@ body {
 
 @media (max-width: 575.98px) {
   body {
-    padding-top: 20vh;
-  }
-
-  .container {
-    margin: 25px;
+    padding-top: 15vh;
   }
 }
