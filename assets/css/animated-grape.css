@@ -405,9 +405,3 @@ body {
   top: 360px;
   left: 220px;
 }
-
-@media (max-width: 575.98px) {
-  body {
-    padding-top: 15vh;
-  }
-}
