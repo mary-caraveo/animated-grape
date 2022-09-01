@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 body {
-  display: grid;
-  place-items: center;
   background: plum;
   margin: 0;
-  height: 100vh;
   overflow: hidden;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  height: 54vh;
+  height: 100vh;
 }
 
 .text {
@@ -18,8 +18,8 @@ body {
   font-family: "Henny Penny", cursive;
   font-size: 22px;
   color: #6b0374;
-  left: 38rem;
-  top: 23rem;
+  left: 72%;
+  top: 68%;
   animation: bounce-in-right 5s ease-in-out;
 }
 
@@ -51,8 +51,8 @@ body {
 
 .container-sheets {
   position: absolute;
-  width: 600px;
-  top: 30px;
+  width: 500px;
+  height: 100px;
 }
 
 .sheets {
@@ -67,24 +67,25 @@ body {
 }
 
 .sheets-1 {
-  left: 50px;
-  top: -110px;
   transform: rotate(10deg);
+  top: -14rem;
 }
+
 .sheets-2 {
-  left: 100px;
-  top: -130px;
   transform: rotate(55deg);
+  left: 5rem;
+  top: -15rem;
 }
 
 .sheets-3 {
-  right: 185px;
-  top: -130px;
+  right: 7rem;
+  top: -15rem;
   transform: rotate(60deg);
 }
+
 .sheets-4 {
-  right: 100px;
-  top: -100px;
+  right: 3rem;
+  top: -13rem;
   transform: rotate(100deg);
 }
 
@@ -97,15 +98,10 @@ body {
   }
 }
 
-.grape {
-  background: #6b0374;
-  border-radius: 50%;
+.container-face {
   position: absolute;
-  width: 110px;
-  height: 130px;
-  animation: move 5s alternate infinite;
-  box-shadow: 5px 16px 10px rgb(0, 0, 0, 0.3);
-  /* border: 1px solid #550059; */
+  width: 600px;
+  height: 400px;
 }
 
 .tabs {
@@ -120,7 +116,7 @@ body {
 .tabs-left {
   position: absolute;
   left: 220px;
-  top: -85px;
+  top: -76px;
   transform: rotate(110deg);
 }
 
@@ -141,8 +137,8 @@ body {
 
 .tabs-right {
   position: absolute;
-  right: 130px;
-  top: 100px;
+  right: 120px;
+  top: 104px;
   transform: rotate(75deg);
 }
 
@@ -172,13 +168,13 @@ body {
 }
 
 .eyes-left {
-  left: 165px;
-  top: 70px;
+  left: 168px;
+  top: 78px;
 }
 
 .eyes-right {
-  right: 190px;
-  top: 70px;
+  right: 182px;
+  top: 78px;
 }
 
 .eyes-medium {
@@ -277,7 +273,7 @@ body {
   width: 130px;
   height: 130px;
   top: 190px;
-  left: 221px;
+  left: 226px;
 }
 
 .tongue {
@@ -299,10 +295,25 @@ body {
   top: 35px;
 }
 
-.container-grape-1 {
-  position: relative;
+.container-grape {
+  position: absolute;
   width: 600px;
-  height: 120px;
+  height: 400px;
+}
+
+.grape {
+  background: #6b0374;
+  border-radius: 50%;
+  position: absolute;
+  width: 110px;
+  height: 130px;
+  animation: move 5s alternate infinite;
+  box-shadow: 5px 16px 10px rgb(0, 0, 0, 0.3);
+}
+
+.container-grape-1 {
+  position: absolute;
+  top: 1rem;
 }
 
 @keyframes move {
@@ -315,9 +326,9 @@ body {
 }
 
 .grape-1 {
-  left: 125px;
   border-left: 12px solid #550059;
   border-right: 12px solid #550059;
+  left: 125px;
 }
 
 .grape-2 {
@@ -326,14 +337,12 @@ body {
 }
 
 .grape-3 {
-  right: 150px;
   border-right: 12px solid #550059;
+  right: -29rem;
 }
 
 .container-grape-2 {
-  position: relative;
-  width: 600px;
-  height: 120px;
+  position: absolute;
   top: -27px;
 }
 
@@ -341,67 +350,72 @@ body {
   border-left: 12px solid #550059;
   border-right: 12px solid #550059;
   left: 80px;
+  top: 8rem;
 }
 
 .grape-5 {
   box-shadow: none;
-  left: 180px;
+  left: 12rem;
+  top: 8rem;
 }
 
 .grape-6 {
   box-shadow: none;
-  right: 210px;
+  right: -25rem;
+  top: 8rem;
 }
 
 .grape-7 {
   border-right: 12px solid #550059;
-  right: 110px;
+  right: -31rem;
+  top: 8rem;
 }
 
 .container-grape-3 {
-  position: relative;
-  width: 600px;
-  height: 120px;
+  position: absolute;
   top: -55px;
 }
 
 .grape-8 {
   border-left: 12px solid #550059;
   left: 120px;
+  top: 15rem;
 }
 
 .grape-9 {
   box-shadow: none;
-  left: 225px;
+  left: 14.5rem;
+  top: 15rem;
 }
 
 .grape-10 {
   border-right: 12px solid #550059;
-  right: 160px;
+  right: -28rem;
+  top: 15rem;
 }
 
 .container-grape-4 {
-  position: relative;
-  width: 600px;
-  height: 120px;
+  position: absolute;
   top: -85px;
 }
 
 .grape-11 {
   border-left: 12px solid #550059;
   border-right: 12px solid #550059;
-  left: 170px;
+  left: 11rem;
+  top: 22.5rem;
 }
 
 .grape-12 {
   border-left: 12px solid #550059;
   border-right: 12px solid #550059;
-  right: 220px;
+  right: -25rem;
+  top: 22.5rem;
 }
 
 .grape-13 {
   border-left: 12px solid #550059;
   border-right: 12px solid #550059;
   top: 360px;
-  left: 220px;
+  left: 14rem;
 }
