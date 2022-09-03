@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  min-width: min-content;
   height: 100vh;
 }
 
@@ -84,8 +84,8 @@ body {
 }
 
 .sheets-4 {
-  right: 3rem;
-  top: -13rem;
+  right: 2rem;
+  top: -15rem;
   transform: rotate(100deg);
 }
 
@@ -296,7 +296,7 @@ body {
 }
 
 .container-grape {
-  position: absolute;
+  position: relative;
   width: 600px;
   height: 400px;
 }
